@@ -49,7 +49,7 @@ namespace Npgsql_core_test
                 )
             );
 
-            //services.AddScoped<IDataAccessProvider, DataAccessPostgreSqlProvider.DataAccessPostgreSqlProvider>();
+            services.AddScoped<IDataAccessProvider, DataAccessPostgreSqlProvider>();
 
             JsonOutputFormatter jsonOutputFormatter = new JsonOutputFormatter
             {
